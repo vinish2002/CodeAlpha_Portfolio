@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Audiowide", sans-serif;
+}
+html
+{
+    font-size: 75%;
+}
+body
+{
+    background: url("https://img.freepik.com/free-vector/gradient-hexagonal-background_23-2148932756.jpg?size=626&ext=jpg&ga=GA1.1.226538266.1707889181&semt=ais");
+    color: #0b061f;
+    /*overflow: hidden;*/
+}
+span
+{
+    color: #FF2A00;
+}
+.header
+{
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    padding: 2rem 7%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    transition: .5s;
+    background-color: #0b061f;/* rgba(255, 255, 255, 0.06);*/
+    -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+    border: 1px black solid;
+}
+.name
+{
+    font-size: 2.5rem;
+    color: #FF2A00;
+    font-weight: 600;
+    margin-right: auto;
+    font-family: "Audiowide", sans-serif;
+}
+.navbar a
+{
+    position: relative;
+    font-size: 1.7rem;
+    color: #FFF;
+    font-weight: 500;
+    margin-right: 3.5rem;
+    font-family: "Audiowide", sans-serif;
+}
+section
+{
+    align-items: center;
+    min-height: 100vh;
+    padding: 10rem 7% 2rem;
+    background-color: rgba(255, 255, 255, 0.06);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+}
+/* Home Content */
+.home
+{
+    display: flex;
+    align-items: center;
+}
+.home .hcont
+{
+    width: 100%;
+}
+.hcont h3
+{
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: .3;
+}
+.hcont h1
+{
+    text-align: center;
+    font-size: 5.6rem;
+    font-weight: 700;
+    margin-bottom: .3rem;
+}
+.hcont p
+{
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+.hcont .social-media a
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid #FF2A00;
+    border-radius: 30%;
+    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .2);
+    font-size: 2rem;
+    color: #FF2A00;
+    margin: 2.5rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+.hcont .social-media a:hover
+{
+    background: #FF2A00;
+    color: #fdfdfd;
+}
+.btn
+{
+    display: inline-block;
+    padding: 1.2rem 2.8rem;
+    background: #FF2A00;
+    border-radius: .6rem;
+    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .2);
+    font-size: 1.6rem;
+    color: #fdfdfd;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    border: .2rem solid transparent;
+    transition: .5s ease;
+}
+.btn:hover
+{
+    background: rgba(0, 0, 0, .2);
+    color: #fdfdfd;
+    border-color: #FF2A00;
+}
+
+/* About content */
+.about
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.heading
+{
+    font-size: 4.5rem;
+    text-align: center;
+}
+.abcnt h2
+{
+    text-align: left;
+    line-height: 1.2;
+}
+.abcnt h3
+{
+    font-size: 2rem;
+}
+.abcnt p
+{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+/* Education section */
+.education
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.heading
+{
+    font-size: 4.5rem;
+    text-align: center;
+}
+.eductn h2
+{
+    text-align: left;
+    line-height: 1.2;
+}
+.eductn h3
+{
+    font-size: 2rem;
+}
+.eductn p
+{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+/* Certifications & Internship section */
+.certint
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.cert, .int
+{
+    text-align: center;
+    width: 50%;
+}
+.cert h3, .int h3
+{
+    font-size: 3rem;
+    line-height: 1.2;
+    padding-bottom: 20px;
+}
+.cert h2, .int h2
+{
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1;
+}
+.cert p, .int p
+{
+    font-size: 1.6rem;
+    margin: 1.5rem 0 2rem;
+}
+
+/* More*/
+.more
+{
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.proj, .ach, .perint
+{
+    text-align: center;
+    width: 100%;
+}
+.proj h2, .ach h2, .perint h2
+{
+    font-size: 3rem;
+    text-align: center;
+    line-height: 1.2;
+    padding-bottom: 25px;
+}
+.proj h3, .ach h3, .perint h3
+{
+    font-size: 2rem;
+    padding-top: 10px;
+    line-height: 0;
+    padding-bottom: 20px;
+}
+.proj p, .ach p, .perint p
+{
+    font-size: 1.6rem;
+    margin: 1.5rem 0 2rem;
+}
